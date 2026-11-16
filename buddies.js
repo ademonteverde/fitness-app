@@ -2,6 +2,7 @@
 const BUDDIES = [
   {"id":"whisper","name":"Gym Card","shortName":"Gym Card","background":"#0A6E7A","themeColor":"#0A6E7A","listed":false,"buddyName":"","kind":""},
   {"id":"jasper","name":"Fitness Journal","shortName":"Journal","background":"#8C2346","themeColor":"#8C2346","listed":false,"buddyName":"","kind":""},
+  {"id":"ollie","name":"Fitness Journal","shortName":"Journal","background":"#16191D","themeColor":"#16191D","listed":false,"buddyName":"","kind":""},
   {"id":"cat","name":"Fitness Journal","shortName":"Journal","background":"#FFF4E6","themeColor":"#2B7A4B","listed":true,"buddyName":"Miso","kind":"cat"},
   {"id":"pup","name":"Fitness Journal","shortName":"Journal","background":"#FFF4E6","themeColor":"#2B7A4B","listed":true,"buddyName":"Biscuit","kind":"pup"},
   {"id":"bunny","name":"Fitness Journal","shortName":"Journal","background":"#FFF4E6","themeColor":"#2B7A4B","listed":true,"buddyName":"Clover","kind":"bunny"},
