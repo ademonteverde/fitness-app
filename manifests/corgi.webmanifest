@@ -1,9 +1,9 @@
 {
-  "id": "./?b=corgi",
+  "id": "../?b=corgi",
   "name": "Fitness Journal",
   "short_name": "Journal",
-  "start_url": "./?b=corgi",
-  "scope": "./",
+  "start_url": "../?b=corgi",
+  "scope": "../",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#FFF4E6",

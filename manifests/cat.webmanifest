@@ -1,9 +1,9 @@
 {
-  "id": "./?b=cat",
+  "id": "../?b=cat",
   "name": "Fitness Journal",
   "short_name": "Journal",
-  "start_url": "./?b=cat",
-  "scope": "./",
+  "start_url": "../?b=cat",
+  "scope": "../",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#FFF4E6",

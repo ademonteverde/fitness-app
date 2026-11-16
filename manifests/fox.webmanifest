@@ -1,9 +1,9 @@
 {
-  "id": "./?b=fox",
+  "id": "../?b=fox",
   "name": "Fitness Journal",
   "short_name": "Journal",
-  "start_url": "./?b=fox",
-  "scope": "./",
+  "start_url": "../?b=fox",
+  "scope": "../",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#FFF4E6",

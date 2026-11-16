@@ -1,9 +1,9 @@
 {
-  "id": "./?b=whisper",
+  "id": "../?b=whisper",
   "name": "Gym Card",
   "short_name": "Gym Card",
-  "start_url": "./?b=whisper",
-  "scope": "./",
+  "start_url": "../?b=whisper",
+  "scope": "../",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#0A6E7A",

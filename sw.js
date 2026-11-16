@@ -1,6 +1,6 @@
 // Caches the app shell so it opens instantly and can show an offline screen.
 // The fitness page itself is never cached. Bump CACHE_NAME when the shell changes.
-const CACHE_NAME = 'fitness-app-v5';
+const CACHE_NAME = 'fitness-app-v6';
 const SHELL_FILES = ['./', './index.html', './styles.css', './app.js', './buddies.js'];
 const PUSH_CACHE = 'fitness-push';
 

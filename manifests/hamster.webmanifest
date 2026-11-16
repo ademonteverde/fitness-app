@@ -1,9 +1,9 @@
 {
-  "id": "./?b=hamster",
+  "id": "../?b=hamster",
   "name": "Fitness Journal",
   "short_name": "Journal",
-  "start_url": "./?b=hamster",
-  "scope": "./",
+  "start_url": "../?b=hamster",
+  "scope": "../",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#FFF4E6",

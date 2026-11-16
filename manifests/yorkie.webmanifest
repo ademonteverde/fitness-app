@@ -1,9 +1,9 @@
 {
-  "id": "./?b=yorkie",
+  "id": "../?b=yorkie",
   "name": "Fitness Journal",
   "short_name": "Journal",
-  "start_url": "./?b=yorkie",
-  "scope": "./",
+  "start_url": "../?b=yorkie",
+  "scope": "../",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#FFF4E6",

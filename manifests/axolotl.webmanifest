@@ -1,9 +1,9 @@
 {
-  "id": "./?b=axolotl",
+  "id": "../?b=axolotl",
   "name": "Fitness Journal",
   "short_name": "Journal",
-  "start_url": "./?b=axolotl",
-  "scope": "./",
+  "start_url": "../?b=axolotl",
+  "scope": "../",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#FFF4E6",

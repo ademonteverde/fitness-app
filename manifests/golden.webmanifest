@@ -1,9 +1,9 @@
 {
-  "id": "./?b=golden",
+  "id": "../?b=golden",
   "name": "Fitness Journal",
   "short_name": "Journal",
-  "start_url": "./?b=golden",
-  "scope": "./",
+  "start_url": "../?b=golden",
+  "scope": "../",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#FFF4E6",

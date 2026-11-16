@@ -1,9 +1,9 @@
 {
-  "id": "./?b=lamb",
+  "id": "../?b=lamb",
   "name": "Fitness Journal",
   "short_name": "Journal",
-  "start_url": "./?b=lamb",
-  "scope": "./",
+  "start_url": "../?b=lamb",
+  "scope": "../",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#FFF4E6",

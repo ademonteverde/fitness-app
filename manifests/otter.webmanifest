@@ -1,9 +1,9 @@
 {
-  "id": "./?b=otter",
+  "id": "../?b=otter",
   "name": "Fitness Journal",
   "short_name": "Journal",
-  "start_url": "./?b=otter",
-  "scope": "./",
+  "start_url": "../?b=otter",
+  "scope": "../",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#FFF4E6",

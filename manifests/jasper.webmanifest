@@ -1,9 +1,9 @@
 {
-  "id": "./?b=jasper",
+  "id": "../?b=jasper",
   "name": "Fitness Journal",
   "short_name": "Journal",
-  "start_url": "./?b=jasper",
-  "scope": "./",
+  "start_url": "../?b=jasper",
+  "scope": "../",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#8C2346",

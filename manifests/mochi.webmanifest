@@ -1,9 +1,9 @@
 {
-  "id": "./?b=mochi",
+  "id": "../?b=mochi",
   "name": "Fitness Journal",
   "short_name": "Journal",
-  "start_url": "./?b=mochi",
-  "scope": "./",
+  "start_url": "../?b=mochi",
+  "scope": "../",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#FFF4E6",
