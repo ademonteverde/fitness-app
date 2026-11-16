@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2B7A4B" id="theme-color">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="robots" content="noindex">
+  <title>Fitness Journal</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="buddies.js"></script>
+  <script>
+    // Pick the icon set from ?b= (or the last one used on this device). The manifest
+    // link has to exist before the browser checks installability, so add it here.
+    (function () {
+      let stored = null;
+      try {
+        stored = localStorage.getItem('fh:b');
+      } catch (e) {}
+
+      const requested = (new URLSearchParams(location.search).get('b') || stored || 'fox').toLowerCase();
+      const buddy = BUDDIES.find((b) => b.id === requested) || BUDDIES.find((b) => b.id === 'fox');
+      window.APP_BUDDY = buddy.id;
+
+      const addLink = (rel, href) => {
+        const link = document.createElement('link');
+        link.rel = rel;
+        link.setAttribute('href', href);
+        document.head.appendChild(link);
+      };
+      addLink('manifest', 'manifests/' + buddy.id + '.webmanifest');
+      addLink('icon', 'icons/' + buddy.id + '-192.png');
+      addLink('apple-touch-icon', 'icons/' + buddy.id + '-180.png');
+
+      const appTitle = document.createElement('meta');
+      appTitle.name = 'apple-mobile-web-app-title';
+      appTitle.content = buddy.shortName;
+      document.head.appendChild(appTitle);
+
+      document.title = buddy.name;
+      document.getElementById('theme-color').content = buddy.themeColor;
+    })();
+  </script>
+</head>
+<body>
+  <noscript><p style="padding: 16px">This app needs JavaScript switched on.</p></noscript>
+  <div id="app"></div>
+  <script src="app.js"></script>
+</body>
+</html>

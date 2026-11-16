@@ -1,0 +1,311 @@
+:root {
+  --bg: #FFF8F0;
+  --surface: #FFFFFF;
+  --ink: #20262C;
+  --muted: #66707A;
+  --line: #E7DED3;
+  --accent: #2B7A4B;
+  --accent-ink: #fff;
+  --soft: #E3F1E8;
+  --bad: #B3261E;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121518;
+    --surface: #1B2024;
+    --ink: #EEF1F3;
+    --muted: #A3ACB4;
+    --line: #2C3338;
+    --accent: #6FD59A;
+    --accent-ink: #0B1215;
+    --soft: #1E3127;
+    --bad: #F2B8B5;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background: var(--bg);
+  color: var(--ink);
+  font: 16px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+h1 {
+  font-size: 22px;
+  margin: 10px 0 2px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 16px;
+  margin: 0 0 8px;
+}
+
+p {
+  margin: 6px 0;
+}
+
+ol {
+  padding-left: 20px;
+  margin: 6px 0;
+}
+
+li {
+  margin: 3px 0;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  margin: 4px 0 6px;
+}
+
+input[type=url],
+input[type=text] {
+  width: 100%;
+  font: inherit;
+  font-size: 15px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--bg);
+  color: var(--ink);
+}
+
+input:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+details summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button,
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 46px;
+  padding: 12px 18px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--accent-ink);
+  font: inherit;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button.ghost,
+.btn.ghost {
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--line);
+}
+
+.screen {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 28px 16px 40px;
+}
+
+.card {
+  width: 100%;
+  max-width: 440px;
+  margin-top: 14px;
+  padding: 18px 16px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+}
+
+.muted {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.center {
+  text-align: center;
+}
+
+.intro {
+  max-width: 380px;
+  text-align: center;
+}
+
+.hero {
+  display: grid;
+  place-items: center;
+}
+
+.hero img {
+  width: 96px;
+  height: 96px;
+  border-radius: 22px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .12);
+}
+
+.error {
+  min-height: 1.2em;
+  margin-top: 6px;
+  color: var(--bad);
+  font-size: 14px;
+}
+
+.error.note {
+  color: var(--muted);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.row > * {
+  flex: 1 1 140px;
+}
+
+.row.narrow {
+  width: 100%;
+  max-width: 300px;
+}
+
+#install-help {
+  margin-top: 10px;
+}
+
+#install-help button {
+  width: 100%;
+}
+
+/* Icon picker */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(64px, 1fr));
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.grid button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  min-height: 0;
+  padding: 4px;
+  background: transparent;
+  border: 2px solid transparent;
+  border-radius: 16px;
+  color: var(--ink);
+  font: inherit;
+  font-weight: 500;
+  font-size: 11.5px;
+}
+
+.grid img {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+}
+
+.grid button[aria-pressed=true] {
+  border-color: var(--accent);
+  background: var(--soft);
+}
+
+/* Page frame and loading screen */
+#frame {
+  position: fixed;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: var(--bg);
+}
+
+#wait {
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 12px;
+  padding: 16px;
+  background: var(--bg);
+  text-align: center;
+  transition: opacity .25s;
+}
+
+#wait img {
+  width: 84px;
+  height: 84px;
+  border-radius: 20px;
+  animation: bob 1.6s ease-in-out infinite;
+}
+
+@keyframes bob {
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #wait img {
+    animation: none;
+  }
+}
+
+#help {
+  display: none;
+  max-width: 420px;
+}
+
+#help.on {
+  display: block;
+}
+
+/* Heart rate connect sheet and the notifications sheet */
+#hrask,
+#pushask {
+  position: fixed;
+  left: 12px;
+  right: 12px;
+  bottom: calc(env(safe-area-inset-bottom, 0px) + 16px);
+  z-index: 5;
+  max-width: 440px;
+  margin: 0 auto;
+  padding: 16px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, .25);
+}
+
+#hrask p,
+#pushask p {
+  margin: 0 0 10px;
+}
